@@ -14,7 +14,15 @@ public class AlfredQuotes{
     }
 
     public String respondBeforeAlexis(String conversation){
-        return "";
+        if (conversation.indexOf("Alexis") > -1){
+
+            return "She really can't help.. How may i be of assitance??";
+        }
+        if (conversation.indexOf("Alfred") > -1){
+
+            return "Right away, How can i be of assitance??";
+        }
+        return "Right. And with that i shall retire.";
     }
 
 }
