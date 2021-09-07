@@ -1,8 +1,9 @@
 public class BasicJava{
     // Print 1-255
     public static void print255(){
-        for (var i = 0; i <= 255; i++);
-        return i;
+        for (var i=0; i<=255;i++);
+        String result = i;
+        return result;
     }
 
     // Print odd numbers between 1-255
