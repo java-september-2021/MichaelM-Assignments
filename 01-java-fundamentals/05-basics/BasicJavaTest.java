@@ -1,5 +1,5 @@
-import java.util.ArrayList;
 import java.util.Arrays;
+
 public class BasicJavaTest{
     public static void main(String[] args) {
         int[] arr2 =  {1,3,5,7,9,13};
