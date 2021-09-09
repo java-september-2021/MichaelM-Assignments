@@ -1,10 +1,3 @@
-
-
-
-
-
-
-
 // ● Create getter and setters for each field
 
 // ● Create a ProjectTest file that will test all the functionality.
@@ -25,42 +18,40 @@
 public class Project {
     private String name;
     private String description;
+    
+    private double initialCost = 0;
+    private static String defaultName = "Default NAME";
+    private static String defaultDescription = "Default DESCRIPTION";
     // ● Create an instance method called elevatorPitch that 
     // will return the name and description separated by a colon.
+    public String getName(){return name;}
+    public String getDescription(){return description;}
+    public double getCost(){return initialCost;}
+    public void setName(){this.name = name;}
+    public void setDescription(){this.description = description;}
     public String elevatorPitch(){
-        return this.name +" : "+ this.description;
+        return String.format("%s (%02f) %s", name, initialCost,description);
     }
+
     // ● Overload the constructor method in three different ways.
     // public Project() {}
     public Project(){
-        name = "Name please?";
-        description = "Description?";
+        name = defaultName;
+        description = defaultDescription;
     }
     // public Project(String name) {}
     public Project(String name){
         this.name = name;
-        description = "Description?";
+        description = defaultDescription;
 
     }
     // public Project(String name, String description) {}
-    public Project(String name,String description){
+    public Project(String name,String description, double cost){
         this.name = name;
-        this.description = description;
-    }
-    public String getName(){
-        return name;
-    }
-    public String getDescription(){
-        return description;
-    }
-    
-    public void setName(){
-        this.name = name;
+        this.initialCost = cost;
+        this.description = description;   
     }
 
-    public void setDescription(){
-        this.description = description;
-    }
 
-    
+
 }
