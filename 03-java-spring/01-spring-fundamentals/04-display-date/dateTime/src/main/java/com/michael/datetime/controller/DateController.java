@@ -18,12 +18,12 @@ public class DateController {
 		}
 	@RequestMapping("/date")
 	public String date(Model veiwModel) {
-		veiwModel.addAttribute("datetime", getDate())
+		veiwModel.addAttribute("datetime", getDate());
 		return "date.jsp";
 		}
 	@RequestMapping("/time")
 	public String time(Model veiwModel) {
-		veiwModel.addAttribute("datetime", getDate())
+		veiwModel.addAttribute("datetime", getDate());
 		return "time.jsp";
 		}
 }

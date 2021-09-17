@@ -12,6 +12,6 @@
 </head>
 <body>
 <script>dateAlert()</script>
-<p><fmt:formatDate pattren="EEEE, 'the' dd 'of' MMM, YYYY" value="${datetime}"/></p>
+<p><fmt:formatDate pattern ="EEEE, 'the' dd 'of' MMM, YYYY" value="${datetime}"/></p>
 </body>
 </html>

@@ -12,6 +12,6 @@
 </head>
 <body>
 <script>timeAlert()</script>
-<p><fmt:formatDate pattren="h:mm a" value="${datetime}"/></p>
+<p><fmt:formatDate pattern="h:mm a" value="${datetime}"/></p>
 </body>
 </html>
