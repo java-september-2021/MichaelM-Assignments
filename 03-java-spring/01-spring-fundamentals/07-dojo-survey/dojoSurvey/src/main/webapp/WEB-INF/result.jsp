@@ -8,6 +8,9 @@
 <title>Result</title>
 </head>
 <body>
-
+<p>Name: <c:out value="${name}"/></p>
+<p>Location: <c:out value="${location}"/></p>
+<p>Language: <c:out value="${language}"/></p>
+<p>Comment: <c:out value="${comment}"/></p>
 </body>
 </html>
