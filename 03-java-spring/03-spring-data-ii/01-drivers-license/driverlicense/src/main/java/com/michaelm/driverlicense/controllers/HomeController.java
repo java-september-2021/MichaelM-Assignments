@@ -39,10 +39,11 @@ public class HomeController {
 	}
 	@RequestMapping("/license/create")
 	public String createLicense(Model model, @ModelAttribute("license") License license) {
+		System.out.println(this.dService.getUnlicensedPeople());
 		model.addAttribute("people", this.dService.getUnlicensedPeople());
 		return "newlicense.jsp";
 	}
-	@RequestMapping(value="/newlicense")
+	@RequestMapping(value="/newlicense", method=RequestMethod.POST)
 	public String processLicense(@Valid @ModelAttribute("license") License license, BindingResult result, Model model) {
 		if(result.hasErrors()) {
 			model.addAttribute("people", this.dService.getUnlicensedPeople());

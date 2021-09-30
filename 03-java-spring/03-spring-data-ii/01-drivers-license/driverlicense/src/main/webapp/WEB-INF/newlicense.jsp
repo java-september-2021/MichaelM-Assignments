@@ -11,13 +11,13 @@
 <body>
 <h1>Create New License</h1>
 <hr>
-<form:form method="POST" action="/newlicense" modelAttribute="License">
+<form:form method="POST" action="/newlicense" modelAttribute="license">
 	<p>
 		<form:label path="person">Select Person</form:label>
 		<form:errors path="person"/>
 		<form:select path="person">
-		<c:forEach items="${person.id}" var="person">
-		<option value="${person.id}">${person.firstName} ${person.lastName}</option> 	
+		<c:forEach items="${people}" var="people">
+		<option value="${people.id}">${people.firstName} ${people.lastName}</option> 	
 		</c:forEach>
 		</form:select>	
 	</p>
