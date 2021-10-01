@@ -16,8 +16,8 @@
 		<form:label path="person">Select Person</form:label>
 		<form:errors path="person"/>
 		<form:select path="person">
-		<c:forEach items="${people}" var="people">
-		<option value="${people.id}">${people.firstName} ${people.lastName}</option> 	
+		<c:forEach items="${people}" var="person">
+		<option value="${person.id}">${person.firstName} ${person.lastName}</option> 	
 		</c:forEach>
 		</form:select>	
 	</p>
